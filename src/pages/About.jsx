@@ -1,4 +1,4 @@
-import '../styles/About.css'
+import '../style/About.css'
 
 export default function About(props) {
     return (
