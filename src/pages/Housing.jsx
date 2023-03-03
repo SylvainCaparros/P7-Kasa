@@ -1,4 +1,4 @@
-import '../style/Housing.css'
+import '../sass/Housing.scss'
 
 export default function Housing(props) {
     return (

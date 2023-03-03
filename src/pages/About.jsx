@@ -1,4 +1,4 @@
-import '../style/About.css'
+import '../sass/About.scss'
 
 export default function About(props) {
     return (

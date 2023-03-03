@@ -1,4 +1,4 @@
-import '../style/Home.css';
+import '../sass/Home.scss'
 
 export default function Home(props) {
   return (

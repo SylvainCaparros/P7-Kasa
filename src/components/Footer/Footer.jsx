@@ -1,1 +1,1 @@
-import './Footer.css'
+import '../../sass/Footer.scss'

@@ -1,4 +1,4 @@
-import '../style/404.css'
+import '../sass/404.scss'
 
 export default function NoMatch(props) {
     return (
