@@ -1,0 +1,27 @@
+.housing {
+    font-family: 'Montserrat';
+    color: #FF6060;
+    text-align: center;
+    &_title {
+        font-size: 288px;
+        margin-top: 75px;
+        margin-bottom: 0;
+    }
+    &_line {
+        font-size: 36px;
+        margin-top: 0;
+        margin-bottom: 150px;
+    }
+    &_link {
+        color: #FF6060;
+        font-size: 18px;
+    }
+    @media screen and (max-width: 768px) {
+        &_line {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    }
+
+}
