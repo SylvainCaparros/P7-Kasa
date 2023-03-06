@@ -1,6 +1,6 @@
 import '../../sass/Header.scss'
 import { Link, Outlet } from "react-router-dom";
-import Logo from '../../assets/LOGO.png'
+import Logo from '../../assets/LOGO.svg'
 
 function Header() {
     return (

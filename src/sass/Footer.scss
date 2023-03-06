@@ -1,0 +1,13 @@
+.footer {
+    background: black;
+    color: white;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    &_contain {
+        margin-top: 20px;
+        &_logo {
+            fill: white;
+        }
+    }
+}
