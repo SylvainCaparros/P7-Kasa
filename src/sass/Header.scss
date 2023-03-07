@@ -11,14 +11,17 @@
     justify-content: space-between;
     .nav {
         &_list {
-            
             list-style-type : none;
             display: flex;
             gap: 40px;
             &_link {
                 text-decoration: none;
                 color: #FF6060;
+                &:hover {
+                    text-decoration: underline;
+                }
             }
+            
         }
     }
 }

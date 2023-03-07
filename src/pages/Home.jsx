@@ -8,16 +8,16 @@ import '../sass/Home.scss'
 
 export default function Home() {
   return (
-    <div>
+    <>
       <main className='containerHome'>
           <Banner background={Img} content='Chez vous, partout et ailleurs'/>
           <section className='sectionHome'>
-            {Apts.map((apt) => {
-              return <Card title={apt.title} />
+            {Apts.map((apt, key) => {
+              return <Card title={apt.title} key={key} id={apt.id} cover={apt.cover} />
             })}
           </section>
       </main>
       <Footer />
-    </div>
+    </>
   );
 }

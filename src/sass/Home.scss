@@ -1,13 +1,13 @@
-.sectionHome {
+.containerHome {
+  margin-top: 50px;
+}
 
+.sectionHome {
   display: flex;
-  background-color: grey;
+  background-color: #F7F7F7;
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 50px 50px;
   margin-top: 50px;
-}
-
-.container {
-
+  border-radius: 25px;
 }

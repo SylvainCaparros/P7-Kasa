@@ -15,7 +15,7 @@ const Router = (props) => {
         <Route path="/" element={<Header />}>
             <Route index element={<Home />} />
             <Route path="about" element={<About />} />
-            <Route path="housing" element={<Housing />} />
+            <Route path="housing/:idHousing" element={<Housing />} />
             <Route path="*" element={<NoMatch />} />
         </Route>
         <Route path="/" element={<Footer />}>
