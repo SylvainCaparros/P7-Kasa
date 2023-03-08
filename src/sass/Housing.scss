@@ -1,0 +1,13 @@
+.Housing {
+    display: flex;
+    &_col {
+        width: 50%;
+        padding: 0 15px;
+        &:first-child {
+            margin-left: -15px;
+        }
+        &:last-child {
+            margin-right: -15px;
+        }
+    }
+}
