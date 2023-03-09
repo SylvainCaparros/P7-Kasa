@@ -11,7 +11,7 @@ export default function Housing() {
     return (
       <main className="Housing">
         <div className='Housing_col'>
-          <Dropdown bar='Equipements' description={aptFound.equipments} />
+          <Dropdown bar='Description' description='' />
         </div>
         <div className='Housing_col'>
           <Dropdown bar='Equipements' description={aptFound.equipments} />

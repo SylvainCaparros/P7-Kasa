@@ -20,6 +20,11 @@
             transform: rotate(180deg);
         }
     }
+    @media screen and (max-width: 768px) {
+        &_title {
+            height: 25px;
+        }
+    }
 }
 
 .description {
@@ -29,6 +34,7 @@
     padding:  10px 20px;
     border-radius: 0 0 10px 10px;
     position: relative;
+    color: #FF6060;
     &:before {
         content: '';
         width: 100%;

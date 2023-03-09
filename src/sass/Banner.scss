@@ -6,6 +6,7 @@
     border-radius: 25px;
     position: relative;
     overflow: hidden;
+    margin-top: 30px;
     &_title {
         position: absolute;
         color: white;
@@ -20,7 +21,6 @@
         height: 100%;
         filter: brightness(80%);
         object-fit: cover;
-       
     }
     @media screen and (max-width: 768px) {
         height: 111px;

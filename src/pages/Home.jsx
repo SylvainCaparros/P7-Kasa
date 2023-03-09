@@ -9,7 +9,7 @@ import '../sass/Home.scss'
 export default function Home() {
   return (
     <>
-      <main className='containerHome'>
+      <main>
           <Banner background={Img} content='Chez vous, partout et ailleurs'/>
           <section className='sectionHome'>
             {Apts.map((apt, key) => {
