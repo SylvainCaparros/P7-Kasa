@@ -38,9 +38,16 @@
                 }
             }
             &_stars {
-                text-align: end;
+                display: flex;
+                justify-content: end;
                 font-size: 30px;
                 margin-top: 10px;
+                &_color {
+                    color: lightgrey;
+                    &_fill {
+                        color: #FF6060; 
+                    }
+                }
             }
         } 
     }

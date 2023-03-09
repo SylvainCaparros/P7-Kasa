@@ -1,6 +1,8 @@
 import Dropdown from '../components/Dropdown/Dropdown'
 import Tag from '../components/Tag/Tag'
 import Apts from '../datas/apts.json'
+import Gallery from '../components/Gallery/Gallery'
+import { useState } from 'react'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
 import '../sass/Housing.scss'
@@ -19,8 +21,11 @@ export default function Housing() {
     const tag4 = aptFound.tags[3];
     const tag5 = aptFound.tags[4];
 
+    const [isFill, setIsFill] = useState(false)
+
     return (
       <main className="Housing">
+        <Gallery pictures={aptFound.pictures} />
         <div className='Housing_details'>
           <div className='Housing_details_location'>
             <h1 className='Housing_details_location_title'>{aptFound.title}</h1>
@@ -54,11 +59,21 @@ export default function Housing() {
               <img className='Housing_details_owner_profile_img' src={aptFound.host.picture} alt='propriétaire'></img>
             </div>
             <div className='Housing_details_owner_stars'>
-              <FontAwesomeIcon icon={ faStar } />
-              <FontAwesomeIcon icon={ faStar } />
-              <FontAwesomeIcon icon={ faStar } />
-              <FontAwesomeIcon icon={ faStar } />
-              <FontAwesomeIcon icon={ faStar } />
+              <div className={'Housing_details_owner_stars_color' + ( isFill ? '_fill' : '' )}>
+                <FontAwesomeIcon icon={ faStar } />
+              </div>
+              <div>
+                <FontAwesomeIcon icon={ faStar } />
+              </div>
+              <div>
+                <FontAwesomeIcon icon={ faStar } />
+              </div>
+              <div>
+                <FontAwesomeIcon icon={ faStar } />
+              </div>
+              <div>
+                <FontAwesomeIcon icon={ faStar } />
+              </div>
             </div>
           </div>
         </div>
