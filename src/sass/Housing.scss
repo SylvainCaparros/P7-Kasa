@@ -1,13 +1,86 @@
 .Housing {
-    display: flex;
-    &_col {
-        width: 50%;
-        padding: 0 15px;
-        &:first-child {
-            margin-left: -15px;
+    &_details {
+        display: flex;
+        color: #FF6060;
+        &_location {
+            width: 75%;
+            &_title {
+                font-weight: 500;
+                font-size: 36px;
+                margin: unset;
+            }
+            &_town {
+                font-weight: 500;
+                font-size: 18px;
+                margin: unset;
+            }
+            &_tags {
+                display: flex;
+                gap: 1%;
+                margin-top: 20px;
+            }
         }
-        &:last-child {
-            margin-right: -15px;
+        &_owner {
+            width: 25%;
+            &_profile {
+                display: flex;
+                justify-content: end;
+                &_name {
+                    display: flex;
+                    align-self: center;
+                    text-align: end;
+                }
+                &_img {
+                    margin-left: 10px;
+                    width: 64px;
+                    height: 64px;
+                    border-radius: 50%;
+                }
+            }
+            &_stars {
+                text-align: end;
+                font-size: 30px;
+                margin-top: 10px;
+            }
+        } 
+    }
+    @media screen and (max-width: 768px) {
+        &_details {
+            flex-direction: column;
+            &_location {
+                width: 100%;
+                &_tags {
+                    flex-wrap: wrap;
+                }
+            }
+            &_owner {
+                width: 100%;
+                &_profile {
+                    display: flex;
+                    align-items: center;
+                    &_img {
+                        width: 32px;
+                        height: 32px;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    &_dropdown {
+        display: flex;
+        margin-top: 20px;
+        &_col {
+            width: 50%;
+            padding: 0 15px;
+            &:first-child {
+                margin-left: -15px;
+            }
+            &:last-child {
+                margin-right: -15px;
+            }
         }
     }
 }

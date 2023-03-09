@@ -1,6 +1,6 @@
 .text {
     font-weight: 500;
-    font-size: 14px;
+    font-size: 11px;
     color: #FFFFFF;
     background: #FF6060;
     border-radius: 10px;
@@ -9,4 +9,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @media screen and (max-width: 768px) {
+        height: 18px;
+        width: 100px;
+        font-size: 10px;
+        margin-top: 5px;
+    }
 }

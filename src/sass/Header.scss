@@ -15,13 +15,21 @@
             display: flex;
             gap: 40px;
             &_link {
+                font-size: 24px;
                 text-decoration: none;
                 color: #FF6060;
                 &:hover {
                     text-decoration: underline;
                 }
-            }
-            
+            }   
+        }
+        @media screen and (max-width: 768px) {
+            &_list {
+                gap: 20px;
+                &_link {
+                    font-size: 12px;
+                }
+            } 
         }
     }
 }
