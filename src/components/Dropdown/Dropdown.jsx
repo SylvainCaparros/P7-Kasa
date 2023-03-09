@@ -17,7 +17,7 @@ export default function Dropdown({ bar, description }) {
             { isOpen 
                 ? <div className='description'>
                     { Array.isArray(description)
-                        ? description.map(e => <div>{e}</div>)
+                        ? description.map((e, key) => <div key={key}>{e}</div>)
                         : description
                     }
                   </div>

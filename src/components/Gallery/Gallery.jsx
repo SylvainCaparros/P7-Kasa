@@ -19,15 +19,19 @@ export default function Gallery(props) {
     return (
         <div className='Gallery'>
             <div className='Gallery_arrow'>
-                {props.pictures.map((picture, key) => {
-                    return <img src={picture} alt='appartement' key={key}></img>
-                })}
-                <div className='Gallery_arrow_left' onClick={handlePrevious}>
-                    <FontAwesomeIcon icon={ faAngleUp } className='Gallery_arrow_form' />
-                </div>
-                <div className='Gallery_arrow_right' onClick={handleNext}>
-                    <FontAwesomeIcon icon={ faAngleUp } className='Gallery_arrow_form' />
-                </div>
+                <img className='Gallery_arrow_img' src={props.pictures[index]} alt='appartement'/>
+                { length > 1 && (
+                        <>
+                            <div className='Gallery_arrow_left' onClick={handlePrevious}>
+                                <FontAwesomeIcon icon={ faAngleUp } className='Gallery_arrow_form' />
+                            </div>
+                            <div className='Gallery_arrow_right' onClick={handleNext}>
+                                <FontAwesomeIcon icon={ faAngleUp } className='Gallery_arrow_form' />
+                            </div>
+                            <div className='Gallery_arrow_index'>{index+1}/{length}</div>
+                        </> 
+                    )   
+                }
             </div>
         </div>
     )

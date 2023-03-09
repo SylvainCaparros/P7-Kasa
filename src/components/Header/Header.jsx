@@ -1,4 +1,4 @@
-import '../../sass/Header.scss'
+import '../../sass/header.scss'
 import { Link, Outlet } from "react-router-dom";
 import Logo from '../../assets/LOGO.svg'
 

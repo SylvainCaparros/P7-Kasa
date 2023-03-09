@@ -3,7 +3,7 @@ import Footer from '../components/Footer/Footer'
 import Img from '../assets/HomeBanner.png'
 import Card from '../components/Card/Card';
 import Apts from '../datas/apts.json'
-import '../sass/Home.scss'
+import '../sass/home.scss'
 
 
 export default function Home() {
