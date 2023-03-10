@@ -4,17 +4,27 @@ import Apts from '../datas/apts.json'
 import Gallery from '../components/Gallery/Gallery'
 import StarFill from '../components/Stars/StarFill'
 import Footer from '../components/Footer/Footer'
+import NoMatch from './404'
+// import { useNavigate } from "react-router-dom"
+// import { useEffect } from 'react'
 import '../sass/housing.scss'
-
-
 
 export default function Housing() {
     let url = document.location.href
     let idurl = new URL(url)
     let id = idurl.pathname.replace('/housing/', '')
     const aptFound = Apts.find(e => e.id === id)
+    // const navigate = useNavigate()
+    // useEffect(() => {
+    //   if (!aptFound) {
+    //     navigate("/404")
+    //   }
+    // })
+    if (!aptFound) {
+      return <NoMatch />
+    }
 
-    return (
+    return ( aptFound &&
       <>
         <main className="Housing">
           <Gallery pictures={aptFound.pictures} />
