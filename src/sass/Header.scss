@@ -19,16 +19,16 @@
                 font-size: 24px;
                 text-decoration: none;
                 color: #FF6060;
-                &:hover {
-                    text-decoration: underline;
-                }
             }   
         }
         @media screen and (max-width: 768px) {
             &_list {
                 gap: 20px;
+                display: flex;
+                flex-wrap: wrap;
                 &_link {
                     font-size: 12px;
+                    text-transform: uppercase;
                 }
             } 
         }
@@ -40,3 +40,7 @@
         width: 100px;
     }
 }
+
+.active a{
+    border-bottom: 1px solid;
+ }

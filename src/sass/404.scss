@@ -17,10 +17,15 @@
         font-size: 18px;
     }
     @media screen and (max-width: 768px) {
+        &_title {
+            font-size: 100px;
+        }
         &_line {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
+            font-size: 26px;
+            margin-bottom: 50px;
         }
     }
 
